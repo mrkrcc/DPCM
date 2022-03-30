@@ -13,7 +13,7 @@ title('Input sinusoidal signal');
  
 for k=1:length(m)   
     if k==1
-        d(k) = m(k);     %  at the first step there is no prediction(because don't have any previous information of signal)
+        d(k) = m(k);     %  at the first step there is no prediction(because don't know anything about signal)
         dq(k) = round(d(k));  % quantization
         q(k) = d(k) - dq(k);  % quantization error
         mq(k) = dq(k);        % first predicted message
